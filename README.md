@@ -1,12 +1,5 @@
 # FastFood
 Responsive CSS3 only
-![](FoodFast.png)
+# Mobile Fully Responsive 
 ![](FoodFast11.png)
 ######################
-
-# Mobile Fully Responsive 
-.
-.
-.
-![](FoodFast12 .png)
-
