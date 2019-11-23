@@ -4,6 +4,9 @@
 <head>
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -21,28 +24,33 @@
         <nav>
             <div class="row">
                 <img src="resources/img/logo-white.png" alt="FastFood logo" class="logo">
-                <ul class="main-nav">
-                    <li><a href="#">Food delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#">Sign up</a></li>
+                <img src="resources/img/logo.png" alt="FastFood logo" class="logo-black">
+
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Food delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cites">Our cities</a></li>
+                    <li><a href="#plans">Sign up</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon ">
+                    <ion-icon class="nav-icon" name="menu"></ion-icon>
+                </a>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I’m hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full js--scroll-to-plan" href="#">I’m hungry</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
         </div>
     </header>
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food</h2>
             <p class="long-copy">
                 Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
             </p>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <ion-icon class="icon-big" name="infinite"></ion-icon>
                 <h3>Up to 365 days/year </h3>
@@ -111,13 +119,13 @@
             </li>
         </ul>
     </section>
-    <section class="section-steps">
+    <section class="section-steps" id="works">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="resources/img/app-iPhone.png" alt="FoodFast app Iphpne" class="app-screen">
+                <img src="resources/img/app-iPhone.png" alt="FoodFast app Iphpne" class="app-screen js--wp-2">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -141,11 +149,11 @@
             </div>
         </div>
     </section>
-    <section class="section-cites">
+    <section class="section-cites" id="cites">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
                 <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
                 <h3>Lisbon</h3>
@@ -239,13 +247,13 @@
         </div>
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">399$ <span>/ month</span></p>
@@ -444,8 +452,20 @@
                 <a href="https://www.mansour.dev/">Mansour.dev</a> 2019 All rights reserved</p>
         </div>
     </footer>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script> -->
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+
 </body>
-<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 
 </html>
